@@ -8,13 +8,14 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script> 
 $(document).ready(function(){
-  $("button").click(function(){
-    $("div").animate({left: '250px'});
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
   });
 });
-</script> 
+</script>
 
 <style>
 body {font-family: "Raleway", sans-serif}
@@ -100,7 +101,8 @@ h1,h2,h3,h4,h5,h6 {font-family: "font-family: 'Playfair Display', serif;"}
     <div class="w3-third w3-container w3-margin-bottom">
       <img src="image/svast.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b><a class="animate" href="Svast.html">Svast</a></b></p>
+        <p><b>
+         Svast</b></p>
         <p>Svast is a global digital exchange for patients, hospitals, insurance providers, logistics, pharmacies and other care delivery organizations.</p>
       
     </div>
@@ -123,8 +125,10 @@ h1,h2,h3,h4,h5,h6 {font-family: "font-family: 'Playfair Display', serif;"}
       <img src="image/Cfia1.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
       
       <div class="w3-container w3-white">
-        <p><b><a class="animate" href="index1.html">view</a></b></p>
-        <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+        <button class=""> view</button>
+        <p><b>
+          <a class="animate"  href="index1.html">View page</a></b></p>
+        
         <p><b>CFIA Redesign</b></p>
         <p>PRedesigning CFIA is a personal project so, this case study is not affiliated with or endorsed by Government  of Canadian Food Inspection Agency.</p>
       </div>
