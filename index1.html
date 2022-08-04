@@ -11,7 +11,14 @@
 <link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+</script>
 <style>
 h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
 body {font-family: "Roboto Slab"}
@@ -149,6 +156,9 @@ Survey Result</strong></h5> I wanted to know
 
 <li><strong>Imagine if you want import/export food to Canada which website you choose?</strong>- There was a confusion between CFIA and Canada Border Service-28.6% user said they choose CFIA, 21.4% user said they go for Canada Border Services.</p>
   <img src="/image/survey.png" alt="" style="width:100%" >
+  
+  <div id="flip">Click to slide down panel</div>
+<div id="panel">Hello world!</div>
 
              <h5><strong>
 Design Process
