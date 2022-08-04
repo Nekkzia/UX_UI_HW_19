@@ -16,10 +16,19 @@
 <style>
   .redDiv {
       background-color: rgb(5, 149, 36);
-      height: 3px;
+      height: 5px;
       width: 1500px;
     
   }
+  
+  .greenDiv {
+      background-color: rgb(5, 149, 36);
+      height: 5px;
+      width: 1500px;
+    
+  }
+  
+  
 </style>
 
 </head>
@@ -39,7 +48,9 @@ body {font-family: "Roboto Slab"}
     <button class="w3-button w3-white w3-hide-small"></i>About me</button>
     <button class="w3-button w3-white w3-hide-small"></i>Resume</button>
 
-    <button class="w3-button w3-white w3-hide-small"></i>Contact</button>
+    <button class="w3-button w3-white w3-hide-small"></i>Contact</button><div id="msgDiv"></div>
+                  
+    <div id="myDiv1" class="greenDiv">
   </div>
   </div>
   
@@ -49,14 +60,10 @@ and is wrapped around the whole page content, except for the footer in this exam
 
   <!-- Header -->
   <header class="w3-container w3-center w3-padding-48 w3-white">
-    <h1 class="w3-xxxlarge"><b>CFIA-Redesign</b></h1>
+    <h1><b>CFIA-Redesign</b></h1>
     <body>
       
-      <div id="msgDiv"></div>
       
-      <div id="myDiv" class="redDiv">
-      </div>
-      </body>
   </header>
 
   <!-- Image header -->
@@ -117,8 +124,11 @@ What is CFIA ? </h5><p><span class="w3-opacity">Canadian Food Inspection Agency 
              
               
               <div class="row">
+                 
                 <div class="column" style="background-color:rgb(190, 190, 190);">
+                  
                   <h2>My Role - UX Designer</h2>
+                  
                   <p><p><ul>Improved the User Experience of the webpage and
                    <p>I created the design system that you will see in this case study</p></ul>
                 </div>
@@ -130,8 +140,11 @@ What is CFIA ? </h5><p><span class="w3-opacity">Canadian Food Inspection Agency 
                     Prototype,
                     Analysis
                     </ul></p></p>
+                    
                 </div>
               </div>
+              
+                  </div>
 <p>
 
 
@@ -375,6 +388,14 @@ function likeFunction(x) {
   $(document).ready(function () {
 
 $('#myDiv').fadeOut(5000, function () {
+    
+  });
+
+  });
+ 
+  $(document).ready(function () {
+
+$('#myDiv1').fadeOut(2000, function () {
     
   });
 
