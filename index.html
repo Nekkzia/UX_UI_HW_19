@@ -7,8 +7,14 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").animate({left: '250px'});
+  });
+});
+</script> 
 
 <style>
 body {font-family: "Raleway", sans-serif}
@@ -118,6 +124,7 @@ h1,h2,h3,h4,h5,h6 {font-family: "font-family: 'Playfair Display', serif;"}
       
       <div class="w3-container w3-white">
         <p><b><a class="animate" href="index1.html">view</a></b></p>
+        <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
         <p><b>CFIA Redesign</b></p>
         <p>PRedesigning CFIA is a personal project so, this case study is not affiliated with or endorsed by Government  of Canadian Food Inspection Agency.</p>
       </div>
@@ -229,14 +236,6 @@ function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
 }
-
-
-$('button').click(function() {
-  $(this).toggleClass('clicked');
-  $('button p').text(function(i, text) {
-    return text === "SENT!" ? "SEND MSG" : "SENT!";
-  });
-});
 </script>
 
 </body>
