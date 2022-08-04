@@ -7,3 +7,240 @@
     
 
 }
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ccffbd;
+}
+.btn {
+  font-size: 1.5em;
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+  overflow: visible;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 10px;
+  color: #f8f1f1;
+  display: block;
+  height: 70px;
+  width: 250px;
+  cursor: pointer;
+  border-radius: 0;
+  background-color: #301b3f;
+  border: none;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.btn:hover {
+  background-color: #3c415c;
+}
+.btn:hover svg {
+  transition: transform 0.15s;
+}
+.btn svg {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  height: 40px;
+  width: auto;
+  transition: transform 0.15s;
+}
+.btn.clicked {
+  background-color: #61b15a;
+  animation: bouncy 0.3s;
+  cursor: default;
+}
+.btn.clicked svg {
+  animation: to-the-moon 0.8s linear;
+  top: -500px;
+}
+.btn.clicked svg path {
+  fill: #6aaa3b;
+}
+/*  sm btn styles  */
+.twitter-btn {
+  position: fixed;
+  margin: auto;
+  bottom: 0;
+  background-color: #1da1f2;
+  border: 0.15em solid #1da1f2;
+  border-left: none;
+  border-bottom: none;
+  border-radius: 0% 100% 0% 0%/0% 100% 0% 93%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+.in-btn {
+  position: fixed;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+  border: 0.15em solid #0072b1;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 100% 0% 0% 0%/100% 0% 0% 0%;
+  background-color: #0072b1;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+.fa-twitter {
+  position: absolute;
+  left: 0em;
+  right: 0.4em;
+  top: 0.5em;
+  bottom: 0;
+  color: #fff;
+  font-size: 1.8em;
+}
+.fa-linkedin-in {
+  position: absolute;
+  left: 0.4em;
+  right: 0em;
+  top: 0.55em;
+  bottom: 0;
+  color: #fff;
+  font-size: 1.8em;
+}
+.in-btn:hover {
+  background-color: #000;
+}
+.twitter-btn:hover {
+  background-color: #000;
+}
+@-moz-keyframes to-the-moon {
+  0% {
+    top: 13px;
+    height: 30px;
+  }
+  5% {
+    top: 13px;
+    height: 30px;
+  }
+  20% {
+    top: 13px;
+    height: 45px;
+  }
+  40% {
+    top: -40px;
+    opacity: 1;
+  }
+  100% {
+    top: -200px;
+    height: 0;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes to-the-moon {
+  0% {
+    top: 13px;
+    height: 30px;
+  }
+  5% {
+    top: 13px;
+    height: 30px;
+  }
+  20% {
+    top: 13px;
+    height: 45px;
+  }
+  40% {
+    top: -40px;
+    opacity: 1;
+  }
+  100% {
+    top: -200px;
+    height: 0;
+    opacity: 1;
+  }
+}
+@-o-keyframes to-the-moon {
+  0% {
+    top: 13px;
+    height: 30px;
+  }
+  5% {
+    top: 13px;
+    height: 30px;
+  }
+  20% {
+    top: 13px;
+    height: 45px;
+  }
+  40% {
+    top: -40px;
+    opacity: 1;
+  }
+  100% {
+    top: -200px;
+    height: 0;
+    opacity: 1;
+  }
+}
+@keyframes to-the-moon {
+  0% {
+    top: 13px;
+    height: 30px;
+  }
+  5% {
+    top: 13px;
+    height: 30px;
+  }
+  20% {
+    top: 13px;
+    height: 45px;
+  }
+  40% {
+    top: -40px;
+    opacity: 1;
+  }
+  100% {
+    top: -200px;
+    height: 0;
+    opacity: 1;
+  }
+}
+@-moz-keyframes bouncy {
+  50% {
+    top: 6px;
+  }
+  100% {
+    top: -6px;
+  }
+}
+@-webkit-keyframes bouncy {
+  50% {
+    top: 6px;
+  }
+  100% {
+    top: -6px;
+  }
+}
+@-o-keyframes bouncy {
+  50% {
+    top: 6px;
+  }
+  100% {
+    top: -6px;
+  }
+}
+@keyframes bouncy {
+  50% {
+    top: 6px;
+  }
+  100% {
+    top: -6px;
+  }
+}

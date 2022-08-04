@@ -228,6 +228,14 @@ function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
 }
+
+
+$('button').click(function() {
+  $(this).toggleClass('clicked');
+  $('button p').text(function(i, text) {
+    return text === "SENT!" ? "SEND MSG" : "SENT!";
+  });
+});
 </script>
 
 </body>
